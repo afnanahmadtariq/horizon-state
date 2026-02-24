@@ -1,65 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, ChevronLeft, ChevronRight, Play, Check, Send, Search, Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { ArrowRight, ChevronLeft, ChevronRight, Play, Check, Send } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
-    <main className="min-h-screen bg-[#0c0c0c] text-[#f0f0f0] overflow-hidden selection:bg-[#ff8c42] selection:text-white pb-24">
-      {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-6 md:px-12 backdrop-blur-md bg-[#0c0c0c]/70 border-b border-white/5">
-        <div className="flex items-center gap-2">
-          <span className="text-xl font-medium tracking-tight">H<span className="brand-dot"></span>rizon State</span>
-        </div>
+    <main className="min-h-screen overflow-hidden selection:bg-[#ff8c42] selection:text-white pb-24">
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8 text-sm text-gray-400">
-          <a href="#" className="text-white">Home</a>
-          <a href="#" className="hover:text-white transition-colors">About Us</a>
-          <a href="#" className="hover:text-white transition-colors">FAQ</a>
-          <a href="#" className="hover:text-white transition-colors">Catalog</a>
-          <a href="#" className="hover:text-white transition-colors">Contact Us</a>
-        </div>
-
-        <div className="hidden md:flex items-center gap-4">
-          <button className="text-gray-400 hover:text-white transition-colors">
-            <Search size={20} />
-          </button>
-          <button className="bg-white text-black px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
-            Schedule a call
-          </button>
-        </div>
-
-        {/* Mobile Menu Toggle */}
-        <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </nav>
-
-      {/* Mobile Menu Dropdown */}
-      <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-[#0c0c0c] pt-24 px-6 flex flex-col gap-6"
-          >
-            <a href="#" className="text-2xl font-medium text-white border-b border-white/10 pb-4">Home</a>
-            <a href="#" className="text-2xl font-medium text-gray-400 border-b border-white/10 pb-4">About Us</a>
-            <a href="#" className="text-2xl font-medium text-gray-400 border-b border-white/10 pb-4">FAQ</a>
-            <a href="#" className="text-2xl font-medium text-gray-400 border-b border-white/10 pb-4">Catalog</a>
-            <a href="#" className="text-2xl font-medium text-gray-400 border-b border-white/10 pb-4">Contact Us</a>
-            <button className="bg-white text-black px-6 py-4 rounded-full text-lg font-medium mt-4">
-              Schedule a call
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* Hero Section */}
       <section className="relative pt-32 px-6 md:px-12 flex flex-col lg:flex-row items-start lg:items-center min-h-[90vh]">
@@ -455,38 +403,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-6 md:px-12 pt-20 pb-10 border-t border-white/10">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-10">
-          <div>
-            <h2 className="text-7xl md:text-[10rem] font-display tracking-tighter leading-none mb-4">
-              HORIZON
-            </h2>
-            <p className="text-gray-400 max-w-sm text-sm md:text-base">
-              Let's keep in touch — be the first to know what's coming.
-            </p>
-          </div>
 
-          <div className="flex w-full md:w-auto items-end gap-16">
-            <div className="flex flex-col gap-4 text-sm text-gray-500">
-              <a href="#" className="hover:text-white transition-colors">Instagram</a>
-              <a href="#" className="hover:text-white transition-colors">Facebook</a>
-              <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-            </div>
-
-            <div className="flex flex-col gap-4 text-sm text-gray-500">
-              <a href="#" className="hover:text-white transition-colors">Terms of Use</a>
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Cookies</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 border-t border-white/10 pt-6">
-          <p>© {new Date().getFullYear()} Horizon State Development. All rights reserved.</p>
-          <p>Design inspired by Horizon Grove</p>
-        </div>
-      </footer>
     </main>
   );
 }
