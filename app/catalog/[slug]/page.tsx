@@ -13,9 +13,9 @@ const allProperties: Record<string, {
         desc: "The Aspen is a four-bedroom masterpiece that integrates open-concept living with floor-to-ceiling glazing throughout. Positioned on an elevated lot, it captures panoramic valley views from every room. The spacious kitchen features Italian marble countertops and custom cabinetry.",
         features: ["Heated infinity pool", "Home theater room", "Smart home automation", "Wine cellar", "Outdoor kitchen"],
         gallery: [
-            "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2675&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2670&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1600566753086-00f18efc2291?q=80&w=2670&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2670&auto=format&fit=crop",
+            "/hero-home.png"
         ],
     },
     "the-sierra": {
@@ -24,9 +24,9 @@ const allProperties: Record<string, {
         desc: "The Sierra balances efficiency and elegance. With three generous bedrooms, a chef-grade kitchen, and a wraparound terrace, this home is built for those who value smart design. Natural light floods every corner thanks to strategically placed skylights.",
         features: ["Skylights throughout", "Built-in office", "Radiant floor heating", "Zen garden courtyard", "EV charging station"],
         gallery: [
-            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2670&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1600585154526-990dced4e56d?q=80&w=2670&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2670&auto=format&fit=crop",
+            "/architecture-exterior.png"
         ],
     },
     "the-ridge": {
@@ -35,9 +35,9 @@ const allProperties: Record<string, {
         desc: "Our flagship residence. The Ridge is an expansive five-bedroom estate with a detached guest house, infinity pool, and private trail access. The primary suite occupies the entire upper floor with a spa bathroom and 180-degree mountain views.",
         features: ["Detached guest house", "Private hiking trail", "Infinity edge pool", "Primary suite floor", "Home gym", "3-car heated garage"],
         gallery: [
-            "https://images.unsplash.com/photo-1613490908578-75c3dbbfa13e?q=80&w=2574&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2670&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2670&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2670&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=2670&auto=format&fit=crop",
+            "/variety-layouts.png"
         ],
     },
     "the-valley": {
@@ -46,9 +46,9 @@ const allProperties: Record<string, {
         desc: "Perfect for couples or small families, The Valley is a compact luxury retreat. Every square foot has been optimized for comfort and beauty. The open-plan living area flows seamlessly onto a private garden patio surrounded by mature trees.",
         features: ["Private garden patio", "Open-plan living", "Built-in storage", "Energy efficient design", "Outdoor shower"],
         gallery: [
-            "https://images.unsplash.com/photo-1627301034444-aefc511bdca9?q=80&w=2670&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1600585154526-990dced4e56d?q=80&w=2670&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1600566753086-00f18efc2291?q=80&w=2670&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2670&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2670&auto=format&fit=crop",
+            "/wellness-hub.png"
         ],
     },
     "the-peak": {
@@ -57,9 +57,9 @@ const allProperties: Record<string, {
         desc: "The Peak is Horizon State\u2019s ultimate expression of luxury living. Set on over an acre of private land, this fully customizable estate offers unparalleled grandeur. Every detail, from the imported stone facades to the climate-controlled wine vault, speaks to extraordinary craftsmanship.",
         features: ["Fully customizable layout", "Wine vault", "Helicopter pad ready", "Private creek access", "Staff quarters", "Observatory tower", "Underground garage"],
         gallery: [
-            "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=2670&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2670&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1613490908578-75c3dbbfa13e?q=80&w=2574&auto=format&fit=crop"
+            "/house-security.png",
+            "/flexible-furniture.png",
+            "/testimonial-1.png"
         ],
     },
 };
