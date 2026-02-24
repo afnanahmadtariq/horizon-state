@@ -10,7 +10,7 @@ export default function About() {
 
                 <div className="w-full h-[400px] relative rounded-[40px] overflow-hidden mb-16">
                     <Image
-                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop"
+                        src="/architecture-exterior.png"
                         alt="About Architecture"
                         fill
                         className="object-cover"

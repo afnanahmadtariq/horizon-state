@@ -163,7 +163,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0c] to-transparent z-10 lg:hidden"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0c0c0c] via-transparent to-transparent z-10 hidden lg:block"></div>
           <Image
-            src="https://images.unsplash.com/photo-1613490908578-75c3dbbfa13e?q=80&w=2574&auto=format&fit=crop"
+            src="/hero-home.png"
             alt="Horizon State Modern Home"
             fill
             className="object-cover object-bottom"
@@ -204,7 +204,7 @@ export default function Home() {
             className="w-full lg:w-1/2 h-[450px] relative rounded-3xl overflow-hidden"
           >
             <Image
-              src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2675&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1170&auto=format&fit=crop"
               alt="Architecture"
               fill
               className="object-cover"
@@ -414,7 +414,7 @@ export default function Home() {
           </div>
           <div className="h-[400px] relative rounded-3xl overflow-hidden shadow-lg">
             <Image
-              src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2574&auto=format&fit=crop"
+              src="/community-market.png"
               alt="Community Market"
               fill
               className="object-cover"
@@ -526,7 +526,7 @@ export default function Home() {
       <section className="py-40 px-6 md:px-12 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1613490908578-75c3dbbfa13e?q=80&w=2574&auto=format&fit=crop"
+            src="/hero-home.png"
             alt="Architecture Setup"
             fill
             className="object-cover opacity-30 grayscale blur-sm"
