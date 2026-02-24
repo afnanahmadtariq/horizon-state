@@ -109,78 +109,81 @@ export default function Home() {
       </AnimatePresence>
 
       {/* Hero Section */}
-      <section className="relative pt-32 px-6 md:px-12 flex flex-col lg:flex-row items-start lg:items-center min-h-[90vh]">
-        <div className="w-full lg:w-1/2 z-10 pt-10 lg:pt-0">
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-6xl md:text-8xl lg:text-[10rem] font-display leading-[0.85] tracking-tighter"
-          >
-            H<span className="brand-dot !w-[0.55em] !h-[0.55em]"></span>RIZON<br />STATE
-          </motion.h1>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-12 max-w-md"
-          >
-            <h2 className="text-3xl md:text-4xl font-light mb-6">
-              welcome to<br />horizon state
-            </h2>
-            <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-10">
-              A unique experience in living and building timeless views, creating a space you&apos;ll want to call home. A place where nature and modern architecture combine perfectly.
-            </p>
-
-            <Link href="/catalog" className="btn-primary group">
-              View Catalog
-              <div className="bg-black text-white rounded-full p-1 border border-black group-hover:bg-white group-hover:text-black group-hover:border-black transition-colors">
-                <ArrowRight size={16} />
-              </div>
-            </Link>
-          </motion.div>
-
-          <div className="mt-16 flex items-center gap-10 border-t border-white/10 pt-8 max-w-md">
-            <div>
-              <p className="text-sm text-gray-500 mb-1">Architecture by</p>
-              <p className="font-medium">Studio C, Inc.</p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-500 mb-1">Located in</p>
-              <p className="font-medium">Lake Tahoe, NV</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Hero Image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="w-full lg:w-[60%] h-[50vh] lg:h-[80vh] absolute bottom-0 right-0 lg:right-[-5%] overflow-hidden rounded-t-[40px] lg:rounded-l-[40px] mt-12 lg:mt-0"
-        >
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0c] to-transparent z-10 lg:hidden"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0c0c0c] via-transparent to-transparent z-10 hidden lg:block"></div>
+      <section className="relative flex flex-col justify-end min-h-screen px-6 md:px-12 pb-16 md:pb-24 pt-40 overflow-hidden">
+        {/* Full Bleed Background Image */}
+        <div className="absolute inset-0 z-0">
           <Image
             src="/hero-home.png"
             alt="Horizon State Modern Home"
             fill
-            className="object-cover object-bottom"
+            className="object-cover"
             priority
           />
+          {/* Gradient overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0c] via-black/50 to-transparent lg:via-black/30"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
+        </div>
 
-          {/* Video Play Button */}
-          <button
-            onClick={() => setVideoOpen(true)}
-            className="absolute bottom-8 right-8 lg:bottom-16 lg:right-16 z-20 flex items-center gap-4 bg-white/10 backdrop-blur-md p-2 rounded-full border border-white/20 hover:bg-white/20 transition-colors cursor-pointer"
-          >
-            <div className="bg-white text-black p-3 rounded-full">
-              <Play size={20} fill="currentColor" />
+        {/* Content */}
+        <div className="relative z-10 w-full flex flex-col lg:flex-row lg:items-end justify-between gap-16 lg:gap-12 mt-auto">
+          {/* Left Side: Title & Info */}
+          <div className="w-full lg:w-1/2">
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-6xl md:text-8xl lg:text-[9.5rem] font-display leading-[0.85] tracking-tighter text-white"
+            >
+              H<span className="brand-dot !w-[0.55em] !h-[0.55em] bg-[#ff8c42]"></span>RIZON<br />STATE
+            </motion.h1>
+
+            <div className="mt-12 md:mt-16 flex items-center gap-10 border-t border-white/20 pt-8 max-w-md">
+              <div>
+                <p className="text-sm text-gray-300 mb-1">Architecture by</p>
+                <p className="font-medium text-white">Studio C, Inc.</p>
+              </div>
+              <div>
+                <p className="text-sm text-gray-300 mb-1">Located in</p>
+                <p className="font-medium text-white">Lake Tahoe, NV</p>
+              </div>
             </div>
-            <span className="pr-4 font-medium text-sm">Play video</span>
-          </button>
-        </motion.div>
+          </div>
+
+          {/* Right Side: Description & CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="lg:max-w-md lg:pb-8"
+          >
+            <h2 className="text-3xl md:text-4xl font-light mb-6 text-white">
+              welcome to<br />horizon state
+            </h2>
+            <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-10">
+              A unique experience in living and building timeless views, creating a space you&apos;ll want to call home. A place where nature and modern architecture combine perfectly.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-6">
+              <Link href="/catalog" className="btn-primary group border-white text-white hover:bg-white hover:text-black">
+                View Catalog
+                <div className="bg-white text-black rounded-full p-1 border border-transparent group-hover:bg-black group-hover:text-white transition-colors">
+                  <ArrowRight size={16} />
+                </div>
+              </Link>
+
+              {/* Video Play Button */}
+              <button
+                onClick={() => setVideoOpen(true)}
+                className="flex items-center gap-3 text-white hover:text-[#ff8c42] transition-colors"
+              >
+                <div className="bg-white/10 backdrop-blur-md p-3 rounded-full border border-white/20">
+                  <Play size={20} fill="currentColor" />
+                </div>
+                <span className="font-medium text-sm tracking-wide uppercase">Play Video</span>
+              </button>
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* SPACE THAT INSPIRES */}

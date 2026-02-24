@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer className="px-6 md:px-12 pt-20 pb-10 border-t border-white/10 bg-[#0c0c0c] text-[#f0f0f0]">
@@ -19,9 +21,9 @@ export default function Footer() {
                     </div>
 
                     <div className="flex flex-col gap-4 text-sm text-gray-500">
-                        <a href="#" className="hover:text-white transition-colors">Terms of Use</a>
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Cookies</a>
+                        <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
+                        <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link href="/cookies" className="hover:text-white transition-colors">Cookies</Link>
                     </div>
                 </div>
             </div>

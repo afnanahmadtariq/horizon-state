@@ -7,11 +7,11 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const properties = [
-    { slug: "the-aspen", title: "The Aspen", price: "$2,400,000", layout: "A - 4 Beds, 3 Baths", image: "/variety-layouts.png" },
-    { slug: "the-sierra", title: "The Sierra", price: "$1,850,000", layout: "B - 3 Beds, 2.5 Baths", image: "/wellness-hub.png" },
-    { slug: "the-ridge", title: "The Ridge", price: "$3,100,000", layout: "C - 5 Beds, 4 Baths", image: "/house-security.png" },
-    { slug: "the-valley", title: "The Valley", price: "$1,600,000", layout: "D - 2 Beds, 2 Baths", image: "/flexible-furniture.png" },
-    { slug: "the-peak", title: "The Peak", price: "$4,200,000", layout: "Custom - 6+ Beds", image: "/hero-home.png" },
+    { slug: "the-aspen", title: "The Aspen", price: "$2,400,000", layout: "A - 4 Beds, 3 Baths", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2675&auto=format&fit=crop" },
+    { slug: "the-sierra", title: "The Sierra", price: "$1,850,000", layout: "B - 3 Beds, 2.5 Baths", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2670&auto=format&fit=crop" },
+    { slug: "the-ridge", title: "The Ridge", price: "$3,100,000", layout: "C - 5 Beds, 4 Baths", image: "https://images.unsplash.com/photo-1613490908578-75c3dbbfa13e?q=80&w=2574&auto=format&fit=crop" },
+    { slug: "the-valley", title: "The Valley", price: "$1,600,000", layout: "D - 2 Beds, 2 Baths", image: "https://images.unsplash.com/photo-1627301034444-aefc511bdca9?q=80&w=2670&auto=format&fit=crop" },
+    { slug: "the-peak", title: "The Peak", price: "$4,200,000", layout: "Custom - 6+ Beds", image: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=2670&auto=format&fit=crop" },
 ];
 
 export default function Catalog() {
